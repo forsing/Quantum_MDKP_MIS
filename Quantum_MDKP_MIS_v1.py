@@ -22,9 +22,9 @@ random.seed(39)
 np.random.seed(39)
 
 FILES = (
-    Path("/Users/4c/Desktop/GHQ/data/loto7_4716_k89.csv"),
-    Path("/Users/4c/Desktop/GHQ/data/loto7_4716_k89_loto_2980.csv"),
-    Path("/Users/4c/Desktop/GHQ/data/loto7_4716_k89_loto_plus_1736.csv"),
+    Path("/data/loto7_4716_k89.csv"),
+    Path("/data/loto7_4716_k89_loto_2980.csv"),
+    Path("/data/loto7_4716_k89_loto_plus_1736.csv"),
 )
 
 N = 39
@@ -1480,7 +1480,7 @@ Log legalne mase: -1.32800564
 Log modelske verovatnoce NEXT: -3.76096823
 UPOZORENJE: VQE kriterijum gradijenta nije dostignut.
 UPOZORENJE: vise od pola sirove mase je nelegalno.
-NEXT: 1 2 5 8 13 29 31
+NEXT: 1 x 5 y 13 z 31
 
 CSV: loto7_4716_k89_loto_2980.csv
 Redova: 2979
@@ -1679,7 +1679,7 @@ Log legalne mase: -1.30953937
 Log modelske verovatnoce NEXT: -3.03938371
 UPOZORENJE: VQE kriterijum gradijenta nije dostignut.
 UPOZORENJE: vise od pola sirove mase je nelegalno.
-NEXT: 1 4 5 10 13 29 35
+NEXT: 1 x 5 y 13 z 35
 
 CSV: loto7_4716_k89_loto_plus_1736.csv
 Redova: 1735
@@ -1843,20 +1843,20 @@ Log legalne mase: -1.57933421
 Log modelske verovatnoce NEXT: -3.67989376
 UPOZORENJE: VQE kriterijum gradijenta nije dostignut.
 UPOZORENJE: vise od pola sirove mase je nelegalno.
-NEXT: 1 5 7 10 13 23 37
+NEXT: 1 x 7 y 13 z 37
 
 
 
 ZAVRSNE NEXT KOMBINACIJE
 
 loto7_4716_k89.csv
-NEXT: 1 2 5 8 13 29 31
+NEXT: 1 x 5 y 13 z 31
 
 loto7_4716_k89_loto_2980.csv
-NEXT: 1 4 5 10 13 29 35
+NEXT: 1 x 5 y 13 z 35
 
 loto7_4716_k89_loto_plus_1736.csv
-NEXT: 1 5 7 10 13 23 37
+NEXT: 1 x 7 y 13 z 37
 """
 
 
@@ -1908,12 +1908,4 @@ VQE optimizuje preostalu energiju.
 Dodatna kvantna regresija amplituda uči težine \(v_i\) iz istorijskih prelaza. 
 VQE ostaje približan optimizator sa sedam faktorizovanih šestokubitnih registara. 
 Program prikazuje konvergenciju i legalnu masu.
-"""
-
-
-
-"""
-https://medium.com/@_monitsharma/solving-the-multi-dimensional-knapsack-problem-a-classically-hard-benchmark-for-quantum-2610e955d114
-
-https://medium.com/@_monitsharma/solving-the-maximum-independent-set-problem-a-classically-hard-benchmark-for-quantum-optimization-5d8e9c267052
 """
